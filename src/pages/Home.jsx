@@ -1,9 +1,13 @@
+import Navbar from '../components/Navbar'
+
 function Home() {
-    return (
-        <div>
-            <h1>Welcome to Trailo</h1>
-        </div>
-    )
+  return (
+    <div className="min-h-screen" style={{background: '#FDF6E3'}}>
+      
+      <Navbar />
+
+    </div>
+  )
 }
 
 export default Home
