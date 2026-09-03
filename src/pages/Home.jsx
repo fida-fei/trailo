@@ -2,8 +2,8 @@ import Navbar from '../components/Navbar'
 import HowItWorks from '../components/HowItWorks'
 import CTA from '../components/CTA'
 
-function Home() {
-  return (
+function Home({ onStart }) {
+      return (
     <div className="min-h-screen" style={{background: '#FDF6E3'}}>
       
       <Navbar />
@@ -29,7 +29,7 @@ function Home() {
         </p>
 
         {/* CTA Button */}
-        <button className="px-10 py-4 rounded-full text-white text-lg font-semibold shadow-lg transition-all duration-300 hover:scale-105"
+        <button onClick={onStart} className="px-10 py-4 rounded-full text-white text-lg font-semibold shadow-lg transition-all duration-300 hover:scale-105"
           style={{background: '#2D6A4F'}}>
           Start Planning →
         </button>
